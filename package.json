@@ -4,6 +4,7 @@
   "homepage": "https://AhmedMohamed6100.github.io/Portfolio",
   "version": "0.0.0",
   "private": true,
+  "deploy": "gh-pages -d dist",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
