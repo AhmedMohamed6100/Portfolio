@@ -43,7 +43,7 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="https://www.facebook.com/ahmed.mohamed.215178?mibextid=ZbWKwL" 
+                href="www.linkedin.com/in/ahmed-mohamed-69580a311" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-foreground/70 hover:text-primary hover:bg-primary/10 transition-colors"

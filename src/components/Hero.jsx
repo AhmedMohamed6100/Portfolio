@@ -74,7 +74,7 @@ const Hero = () => {
               <a href="https://github.com/AhmedMohamed6100" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/ahmed-bosha-624a2b326/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+              <a href="www.linkedin.com/in/ahmed-mohamed-69580a311" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
                 <Linkedin size={24} />
               </a>
 
