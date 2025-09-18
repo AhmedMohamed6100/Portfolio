@@ -1,5 +1,5 @@
 {
-  "name": "ِAhmed-portfolio",
+  "name": "Ahmed-portfolio",
   "type": "module",
   "homepage": "https://AhmedMohamed6100.github.io/Portfolio",
   "version": "0.0.0",
@@ -8,7 +8,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "deploy": "gh-pages -d dist",
+     "predeploy":"npm run build"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
@@ -27,7 +29,6 @@
     "lucide-react": "^0.285.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0",
     "react-router-dom": "^6.16.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.7"

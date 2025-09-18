@@ -36,18 +36,18 @@ export default function WorkEducation() {
         {/* الصور (اليمين) */}
         <div className="grid grid-cols-2 gap-4">
           <img
-            src="/public/images/WhatsApp Image 2025-09-15 at 20.25.52_7299ffb3.jpg"
+            src="/images/WhatsApp Image 2025-09-15 at 20.25.52_7299ffb3.jpg"
             alt="Education 1"
             className="w-full h-full object-cover rounded-lg"
           />
           <div className="grid gap-4">
             <img
-              src="/public/images/WhatsApp Image 2025-09-15 at 20.25.55_3c92ad85.jpg"
+              src="/images/WhatsApp Image 2025-09-15 at 20.25.55_3c92ad85.jpg"
               alt="Education 2"
               className="w-full h-60 object-cover rounded-lg"
             />
             <img
-              src="/public/images/WhatsApp Image 2025-09-15 at 20.25.55_5e3589ce.jpg"
+              src="/images/WhatsApp Image 2025-09-15 at 20.25.55_5e3589ce.jpg"
               alt="Education 3"
               className="w-full h-60 object-cover rounded-lg"
             />
