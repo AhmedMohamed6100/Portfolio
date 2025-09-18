@@ -103,7 +103,7 @@ const Hero = () => {
                 <img
                   className="w-full h-full object-cover rounded-full"
                   alt="Professional portrait"
-                  src="/images/WhatsApp Image 2025-05-11 at 11.48.49 PM.jpg"
+                 src={`${import.meta.env.BASE_URL}images/Ahmed1.jpg`}
                 />
               </div>
             </div>

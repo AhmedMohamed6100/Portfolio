@@ -1,74 +1,73 @@
-
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
     id: 1,
-    title: 'School-managment',
-    description: 'ADMIN PANEL (School_Managment) FRONT- END: Html & Cssframework: (Bootstrap5) BACK - END: PHP CONECTED DATABASE(SQL) PHPMYADMIN_SERVER ',
-    tags: ['HTML', 'CSS', 'BootStrap', 'PHP', 'Sql'],
-  image: 'schoolsystem',
-  imagesrc: '/src/schoolsystem.png',
-  imageAlt: 'School-managment',
-  liveLink: 'https://github.com/AhmedMohamed6100/School_System.git',
-  githubLink: 'https://github.com/AhmedMohamed6100/School_System.git',
-  featured: true
+    title: "School-managment",
+    description:
+      "ADMIN PANEL (School_Managment) FRONT- END: Html & Cssframework: (Bootstrap5) BACK - END: PHP CONECTED DATABASE(SQL) PHPMYADMIN_SERVER ",
+    tags: ["HTML", "CSS", "BootStrap", "PHP", "Sql"],
+    image: "schoolsystem",
+    imageAlt: "School-managment",
+    liveLink: "https://github.com/AhmedMohamed6100/School_System.git",
+    githubLink: "https://github.com/AhmedMohamed6100/School_System.git",
+    featured: true,
   },
-{
-  id: 2,
-    title: 'Follow Tv',
-      description: 'Built a responsive movie website that allows users to explore and view details of trending films. Focused on creating an engaging and clean user experience.',
-        tags: ['HTML', 'CSS', 'JavaScript'],
-          image: 'followtv',
-            imagesrc: '/src/followtv.png',
-              imageAlt: 'follow tv',
-                liveLink: 'https://ahmedmohamed6100.github.io/Movie/',
-                  githubLink: 'https://ahmedmohamed6100.github.io/Movie/',
-                    featured: true
-},
-{
-  id: 3,
-    title: 'Car Shop Showcase',
-      description: 'A car showcase web app where users can view various car models with info cards built using React and styled manually.',
-        tags: ['React', 'JavaScript', 'CSS'],
-          image: 'carshop',
-            imagesrc: '/src/carshop.png',
-              imageAlt: 'Car shop interface with cards of cars',
-                liveLink: 'https://ahmed26bosha.github.io/CarsShop/',
-                  githubLink: 'https://github.com/your-username/car-shop',
-                    featured: true
-},
-{
-  id: 4,
-    title: 'Weather App',
-      description: 'A simple weather application that shows real-time weather conditions using OpenWeatherMap API. Built with HTML, CSS, and JavaScript.',
-        tags: ['JavaScript', 'HTML', 'CSS', 'API'],
-          image: 'weather',
-            imageAlt: 'Weather app showing temperature and weather conditions',
-              liveLink: 'https://ahmed26bosha.github.io/Weather-APP/', // لو في رابط مباشر ضيفه هنا
-                githubLink: 'https://github.com/ahmed26bosha/Weather-APP',
-                  featured: false
-}
+  {
+    id: 2,
+    title: "Follow Tv",
+    description:
+      "Built a responsive movie website that allows users to explore and view details of trending films. Focused on creating an engaging and clean user experience.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    image: "followtv",
+    imageAlt: "Follow Tv project preview",
+    liveLink: "https://ahmedmohamed6100.github.io/Movie/",
+    githubLink: "https://ahmedmohamed6100.github.io/Movie/",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Car Shop Showcase",
+    description:
+      "A car showcase web app where users can view various car models with info cards built using React and styled manually.",
+    tags: ["React", "JavaScript", "CSS"],
+    image: "carshop",
+    imageAlt: "Car shop interface with cards of cars",
+    liveLink: "https://ahmed26bosha.github.io/CarsShop/",
+    githubLink: "https://github.com/your-username/car-shop",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Weather App",
+    description:
+      "A simple weather application that shows real-time weather conditions using OpenWeatherMap API. Built with HTML, CSS, and JavaScript.",
+    tags: ["JavaScript", "HTML", "CSS", "API"],
+    image: "weather",
+    imageAlt: "Weather app showing temperature and weather conditions",
+    liveLink: "https://ahmed26bosha.github.io/Weather-APP/",
+    githubLink: "https://github.com/ahmed26bosha/Weather-APP",
+    featured: false,
+  },
 ];
-
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
 
   const displayedProjects = showAll
     ? projects
-    : projects.filter(project => project.featured);
+    : projects.filter((project) => project.featured);
 
   const fadeInUpVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: (custom) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: custom * 0.1, duration: 0.5 }
-    })
+      transition: { delay: custom * 0.1, duration: 0.5 },
+    }),
   };
 
   return (
@@ -85,7 +84,8 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Explore my recent work and projects that showcase my skills and expertise in web development.
+            Explore my recent work and projects that showcase my skills and
+            expertise in web development.
           </p>
         </motion.div>
 
@@ -104,7 +104,7 @@ const Projects = () => {
                 <img
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   alt={project.imageAlt}
-                  src={`/images/${project.image}.png`}
+                  src={`${import.meta.env.BASE_URL}images/${project.image}.png`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4 flex gap-3">
@@ -130,7 +130,9 @@ const Projects = () => {
 
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                <p className="text-muted-foreground text-sm mb-4">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (

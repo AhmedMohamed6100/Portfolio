@@ -41,7 +41,7 @@ const About = () => {
             custom={1}
           >
             <div className="relative overflow-hidden rounded-lg border border-primary/10 shadow-xl">
-              <img className="w-full h-auto" alt="Professional workspace" src="/images/WhatsApp Image 2025-09-15 at 20.25.55_3c92ad85.jpg" />
+              <img className="w-full h-auto" alt="Professional workspace" src={`${import.meta.env.BASE_URL}images/Ahmed3.jpg`} />
 
               <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
 
