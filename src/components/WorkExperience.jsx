@@ -5,30 +5,30 @@ import { Briefcase, Code2, Rocket, Users } from "lucide-react";
 const experiences = [
   {
     id: 1,
-    title: "NTI Intern",
+    title: " Full Stack (NTI Intern)",
     description:
       " Developed web applications using PHP/Laravel and React.js. Worked with MySQL databases, learned advanced database management skills, and applied best practices for data handling.",
     icon: <Briefcase className="w-8 h-8 text-primary" />,
   },
   {
     id: 2,
-    title: "Backend Developer Intern - Thynk Tech Dz",
+    title: "software developer",
     description:
-      "Worked as a backend developer, building APIs and managing server-side logic for the platform.",
+      "Software & Hardware Maintenance Certificate  (OMC), Misr Workers Complex. ",
     icon: <Code2 className="w-8 h-8 text-primary" />,
   },
   {
     id: 3,
-    title: "NASA Space Apps – Web Developer & Organizer",
+    title: "Cisco CyberOps (NTI Intern)",
     description:
-      "Contributed as part of the development team for the NASA Space Apps Hackathon website.",
+      " Completed hands-on training in Cisco Cybersecurity Operations (CyberOps). Learned how to monitor, analyze, and respond to security events. Developed skills in incident handling and network defense techniques. ",
     icon: <Rocket className="w-8 h-8 text-primary" />,
   },
   {
     id: 4,
-    title: "Hackathons Participant & Team Leader",
+    title: "Freelance (itida E-Youth)",
     description:
-      "Led and participated in hackathons, collaborating on innovative web solutions under tight deadlines.",
+      "Freelance training. We dealt with clients on many freelance sites. We learned how to write a proposal.",
     icon: <Users className="w-8 h-8 text-primary" />,
   },
 ];
